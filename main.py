@@ -5,3 +5,7 @@ print(survey_genres)
 
 survey_abbreviated = {genre[0:3] for genre in genre_results}
 print(survey_abbreviated)
+top_genres = ['rap', 'rock', 'pop']
+
+# Write your code below!
+frozen_top_genres = frozenset(top_genres)
