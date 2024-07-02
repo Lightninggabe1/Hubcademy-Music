@@ -16,8 +16,17 @@ user_tag_2 = 'exciting'
 user_tag_3 = 'electric'
 
 # Write your code below!
-tag_set = set(song_data['Retro Words'])
+tag2_set = set(song_data['Retro Words'])
 thing = [user_tag_1,user_tag_2,user_tag_3]
-tag_set.update(thing)
+tag2_set.update(thing)
 
 song_data['Retro Words'] = tag_set
+song_data_users = {'Retro Words': ['pop', 'onion', 'warm', 'helloworld', 'happy', 'spam', 'electric']}
+
+# Write your code below!
+tag2_set = set(song_data_users['Retro Words'])
+tag2_set.remove('onion')
+tag2_set.remove('helloworld')
+tag2_set.remove('spam')
+song_data_users['Retro Words'] = tag_set
+print(song_data_users)
